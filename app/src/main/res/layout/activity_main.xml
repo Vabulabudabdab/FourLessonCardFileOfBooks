@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Картотека книг"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#8E5DD5"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#E7E4EC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Введите название книги"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#8E5DD5"
+        android:textColorHint="#A688D1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <EditText
+        android:id="@+id/inputAuthor"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#E7E4EC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Введите название автора"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#8E5DD5"
+        android:textColorHint="#A688D1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:text="Добавить в картотеку"
+        android:backgroundTint="#8E5DD5"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAuthor" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:gravity="top"
+        android:padding="10sp"
+        android:background="#E7E4EC"
+        android:hint="Картотека"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#8E5DD5"
+        android:textColorHint="#A688D1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
